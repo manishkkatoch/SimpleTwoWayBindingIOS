@@ -22,7 +22,7 @@ pod 'SimpleTwoWayBinding'
 
 ## Author
 
-Manish Katoch, kmanish@thoughtworks.com
+Manish Katoch, manish.katoch@gmail.com
 
 ## License
 
