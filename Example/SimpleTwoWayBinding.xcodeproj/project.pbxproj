@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		60CBB9A785FFAC65379F34B5 /* Pods_SimpleTwoWayBinding_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECF1B4ADB1D518ACA3E8DA1 /* Pods_SimpleTwoWayBinding_Example.framework */; };
+		907EFE3D1FCAE2CB00BA2201 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EFE3C1FCAE2CB00BA2201 /* FormViewModel.swift */; };
+		907EFE3F1FCAEBCE00BA2201 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EFE3E1FCAEBCE00BA2201 /* SubmissionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +43,14 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61BFE1793C0EBEF5BF29A299 /* Pods-SimpleTwoWayBinding_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTwoWayBinding_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTwoWayBinding_Example/Pods-SimpleTwoWayBinding_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6AC4ADABBEF628BE0FEFCC0A /* Pods_SimpleTwoWayBinding_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTwoWayBinding_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		708F6D4EDD801D7A9CB93DCB /* SimpleTwoWayBinding.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SimpleTwoWayBinding.podspec; path = ../SimpleTwoWayBinding.podspec; sourceTree = "<group>"; };
+		708F6D4EDD801D7A9CB93DCB /* SimpleTwoWayBinding.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleTwoWayBinding.podspec; path = ../SimpleTwoWayBinding.podspec; sourceTree = "<group>"; };
+		907EFE3C1FCAE2CB00BA2201 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		907EFE3E1FCAEBCE00BA2201 /* SubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
 		BC8231F8B99256B7738E8193 /* Pods-SimpleTwoWayBinding_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTwoWayBinding_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTwoWayBinding_Example/Pods-SimpleTwoWayBinding_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C9A42E9AA7EAB0C62E1E7769 /* Pods-SimpleTwoWayBinding_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTwoWayBinding_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTwoWayBinding_Tests/Pods-SimpleTwoWayBinding_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DECF1B4ADB1D518ACA3E8DA1 /* Pods_SimpleTwoWayBinding_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTwoWayBinding_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0CB457EB75EFEB83CD78942 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FB30028F024D40607E1F4DB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F0CB457EB75EFEB83CD78942 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FB30028F024D40607E1F4DB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +99,12 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				907EFE3E1FCAEBCE00BA2201 /* SubmissionViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				907EFE3C1FCAE2CB00BA2201 /* FormViewModel.swift */,
 			);
 			name = "Example for SimpleTwoWayBinding";
 			path = SimpleTwoWayBinding;
@@ -379,6 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907EFE3F1FCAEBCE00BA2201 /* SubmissionViewController.swift in Sources */,
+				907EFE3D1FCAE2CB00BA2201 /* FormViewModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
