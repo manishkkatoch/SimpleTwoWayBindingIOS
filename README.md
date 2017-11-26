@@ -1,6 +1,5 @@
 # SimpleTwoWayBinding
 
-[![CI Status](http://img.shields.io/travis/Manish Katoch/SimpleTwoWayBinding.svg?style=flat)](https://travis-ci.org/Manish Katoch/SimpleTwoWayBinding)
 [![Version](https://img.shields.io/cocoapods/v/SimpleTwoWayBinding.svg?style=flat)](http://cocoapods.org/pods/SimpleTwoWayBinding)
 [![License](https://img.shields.io/cocoapods/l/SimpleTwoWayBinding.svg?style=flat)](http://cocoapods.org/pods/SimpleTwoWayBinding)
 [![Platform](https://img.shields.io/cocoapods/p/SimpleTwoWayBinding.svg?style=flat)](http://cocoapods.org/pods/SimpleTwoWayBinding)
