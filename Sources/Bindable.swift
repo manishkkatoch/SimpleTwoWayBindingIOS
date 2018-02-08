@@ -58,9 +58,12 @@ extension Bindable where Self: NSObject {
             _self.addTarget(Selector, action: Selector{ self.valueChanged() }, for: [.editingChanged, .valueChanged])
         }
         self.binder = observable
+        if let val = observable.value {
+            self.updateValue(with: val)
+        }
         self.observe(for: observable) { (value) in
             self.updateValue(with: value)
         }
-        
     }
+    
 }
