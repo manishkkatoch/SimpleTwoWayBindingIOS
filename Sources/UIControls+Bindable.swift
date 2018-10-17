@@ -78,3 +78,30 @@ public class BindableTextView: UITextView, Bindable, UITextViewDelegate {
         self.valueChanged()
     }
 }
+
+public protocol  BindableTableViewProtocol {
+    func dataSourceUpdated(value: Data)
+}
+
+open class BindableTableView: UITableView, Bindable {
+    
+    open var sourceData: Data = Data()
+    
+    open var bindableDelegate: BindableTableViewProtocol!
+    public typealias BindingType = Data
+    
+    public func observingValue() -> Data? {
+        return self.sourceData
+    }
+    
+    public func updateValue(with value: Data) {
+        bindableDelegate.dataSourceUpdated(value: value)
+    }
+    
+    public func bind(with observable: Observable<Data>) {
+        self.register(for: observable)
+        self.observe(for: observable) { (value) in
+            self.updateValue(with: value)
+        }
+    }
+}
