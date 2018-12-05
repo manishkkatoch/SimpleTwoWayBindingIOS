@@ -55,6 +55,18 @@ extension UIStepper : Bindable {
     }
 }
 
+extension UISegmentedControl : Bindable {
+    public typealias BindingType = Int
+    
+    public func observingValue() -> Int? {
+        return self.selectedSegmentIndex
+    }
+    
+    public func updateValue(with value: Int) {
+        self.selectedSegmentIndex = value
+    }
+}
+
 public class BindableTextView: UITextView, Bindable, UITextViewDelegate {
     public typealias BindingType = String
     
