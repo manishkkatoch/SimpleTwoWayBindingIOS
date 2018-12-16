@@ -35,15 +35,15 @@ extension Bindable where Self: NSObject {
         }
     }
     
-    func getBinderValue() -> BindingType? {
+    public func getBinderValue() -> BindingType? {
         return binder.value
     }
     
-    func setBinderValue(with value: BindingType?) {
+    public func setBinderValue(with value: BindingType?) {
         binder.value = value
     }
     
-    func register(for observable: Observable<BindingType>) {
+    public func register(for observable: Observable<BindingType>) {
         binder = observable
     }
     
@@ -55,7 +55,7 @@ extension Bindable where Self: NSObject {
 
     public func bind(with observable: Observable<BindingType>) {
         if let _self = self as? UIControl {
-            _self.addTarget(Selector, action: Selector{ self.valueChanged() }, for: [.editingChanged, .valueChanged])
+            _self.addTarget(Selector, action: Selector{ [weak self] in self?.valueChanged() }, for: [.editingChanged, .valueChanged])
         }
         self.binder = observable
         if let val = observable.value {
