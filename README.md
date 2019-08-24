@@ -1,3 +1,8 @@
+## update: 08/24/2019
+
+This repository was created for demonstration purpose rather than for consumption. However, given the feedback and usage of this repository, I will start maintaining it here-on and priortize fixing/implementing raised issues. 
+
+
 # SimpleTwoWayBinding for iOS
 
 [![Version](https://img.shields.io/cocoapods/v/SimpleTwoWayBinding.svg?style=flat)](http://cocoapods.org/pods/SimpleTwoWayBinding)
