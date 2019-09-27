@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'SimpleTwoWayBinding'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Ultra light weight and simple two way binding for iOS UIControls.'
   s.description      = <<-DESC
 Ultra light weight and simple two way binding for UIControls.
-Written with love and hope in Swift 4.
+Written with love and hope in Swift 5.
                        DESC
 
   s.homepage         = 'https://github.com/manishkkatoch/SimpleTwoWayBindingIOS'
