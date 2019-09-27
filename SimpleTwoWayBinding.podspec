@@ -15,5 +15,5 @@ Written with love and hope in Swift 5.
 
   s.source_files = 'Sources/**/*'
   s.frameworks = 'UIKit'
-
+  s.swift_version = '5.0'
 end
