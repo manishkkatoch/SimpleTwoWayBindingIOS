@@ -15,7 +15,9 @@ extension UITextField : Bindable {
     }
     
     public func updateValue(with value: String) {
-        self.text = value
+        if self.text != value {
+            self.text = value
+        }
     }
 }
 
@@ -75,7 +77,9 @@ public class BindableTextView: UITextView, Bindable, UITextViewDelegate {
     }
     
     public func updateValue(with value: String) {
-        self.text = value
+        if self.text != value {
+            self.text = value
+        }
     }
     
     public func bind(with observable: Observable<String>) {
