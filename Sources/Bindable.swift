@@ -47,7 +47,7 @@ extension Bindable where Self: NSObject {
         binder = observable
     }
     
-    func valueChanged() {
+    public func valueChanged() {
         if binder.value != self.observingValue() {
             setBinderValue(with: self.observingValue())
         }
